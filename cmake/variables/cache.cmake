@@ -6,3 +6,7 @@ set(CACHE_VAR1 "I can be changed from command line" CACHE STRING "")
 set(CACHE_VAR2 "I can not be changed from command line" CACHE STRING "" FORCE)
 message(STATUS "${CACHE_VAR1}")
 message(STATUS "${CACHE_VAR2}")
+
+# option is a shortcut for BOOL cache variable
+option(MY_OPTION "On or off" OFF)
+message(STATUS "MY_OPTION: ${MY_OPTION}")
